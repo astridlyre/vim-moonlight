@@ -1,6 +1,6 @@
 " moonlight color scheme for airline (https://github.com/vim-airline/vim-airline).
 "
-" URL:     github.com/bluz71/vim-moonlight-colors
+" URL:     github.com/astridlyre/vim-moonlight
 " License: MIT (https://opensource.org/licenses/MIT)
 
 let s:white   = ['#c6c6c6', 251]
