@@ -93,7 +93,7 @@ endif
 
 " Background and text
 if g:moonlightTransparent
-  exec 'highlight Normal ctermbg=232 ctermfg=251 guibg=NONE' . s:black . ' guifg=' . s:white
+  exec 'highlight Normal ctermbg=232 ctermfg=251 guibg=NONE guifg=' . s:white
 else
   exec 'highlight Normal ctermbg=232 ctermfg=251 guibg=' . s:black . ' guifg=' . s:white
 endif
@@ -142,14 +142,25 @@ exec 'highlight Exception ctermfg=9 guifg=' . s:crimson
 exec 'highlight PreProc ctermfg=15 guifg=' . s:cranberry
 
 " Status, split and tab lines
-exec 'highlight StatusLine ctermbg=236  ctermfg=251 cterm=none guibg=NONE' . s:grey236 . ' guifg=' . s:white . ' gui=none'
-exec 'highlight StatusLineNC ctermbg=236 ctermfg=247 cterm=none guibg=NONE' . s:grey236 . ' guifg=' . s:grey247 . ' gui=none'
-exec 'highlight VertSplit ctermbg=236 ctermfg=236 cterm=none guibg=NONE' . s:grey236 . ' guifg=' . s:grey236 . ' gui=none'
-exec 'highlight Tabline ctermbg=236 ctermfg=247 cterm=none guibg=NONE' . s:grey236 . ' guifg=' . s:grey247 . ' gui=none'
-exec 'highlight TablineSel ctermbg=236 ctermfg=4 cterm=none guibg=NONE' . s:grey236 . ' guifg=' . s:blue . ' gui=none'
-exec 'highlight TablineFill ctermbg=236 ctermfg=236 cterm=none guibg=NONE' . s:grey236 . ' guifg=' . s:grey236 . ' gui=none'
-exec 'highlight StatusLineTerm ctermbg=236 ctermfg=251 cterm=none guibg=NONE' . s:grey236 . ' guifg=' . s:white . ' gui=none'
-exec 'highlight StatusLineTermNC ctermbg=236 ctermfg=247 cterm=none guibg=NONE' . s:grey236 . ' guifg=' . s:grey247 . ' gui=none'
+if g:moonlightTransparent
+  exec 'highlight StatusLine ctermbg=236  ctermfg=251 cterm=none guibg=NONE guifg=' . s:white . ' gui=none'
+  exec 'highlight StatusLineNC ctermbg=236 ctermfg=247 cterm=none guibg=NONE guifg=' . s:grey247 . ' gui=none'
+  exec 'highlight VertSplit ctermbg=236 ctermfg=236 cterm=none guibg=NONE guifg=' . s:grey236 . ' gui=none'
+  exec 'highlight Tabline ctermbg=236 ctermfg=247 cterm=none guibg=NONE guifg=' . s:grey247 . ' gui=none'
+  exec 'highlight TablineSel ctermbg=236 ctermfg=4 cterm=none guibg=NONE guifg=' . s:blue . ' gui=none'
+  exec 'highlight TablineFill ctermbg=236 ctermfg=236 cterm=none guibg=NONE guifg=' . s:grey236 . ' gui=none'
+  exec 'highlight StatusLineTerm ctermbg=236 ctermfg=251 cterm=none guibg=NONE guifg=' . s:white . ' gui=none'
+  exec 'highlight StatusLineTermNC ctermbg=236 ctermfg=247 cterm=none guibg=NONE guifg=' . s:grey247 . ' gui=none'
+else
+  exec 'highlight StatusLine ctermbg=236  ctermfg=251 cterm=none guibg=' . s:grey236 . ' guifg=' . s:white . ' gui=none'
+  exec 'highlight StatusLineNC ctermbg=236 ctermfg=247 cterm=none guibg=' . s:grey236 . ' guifg=' . s:grey247 . ' gui=none'
+  exec 'highlight VertSplit ctermbg=236 ctermfg=236 cterm=none guibg=' . s:grey236 . ' guifg=' . s:grey236 . ' gui=none'
+  exec 'highlight Tabline ctermbg=236 ctermfg=247 cterm=none guibg=' . s:grey236 . ' guifg=' . s:grey247 . ' gui=none'
+  exec 'highlight TablineSel ctermbg=236 ctermfg=4 cterm=none guibg=' . s:grey236 . ' guifg=' . s:blue . ' gui=none'
+  exec 'highlight TablineFill ctermbg=236 ctermfg=236 cterm=none guibg=' . s:grey236 . ' guifg=' . s:grey236 . ' gui=none'
+  exec 'highlight StatusLineTerm ctermbg=236 ctermfg=251 cterm=none guibg=' . s:grey236 . ' guifg=' . s:white . ' gui=none'
+  exec 'highlight StatusLineTermNC ctermbg=236 ctermfg=247 cterm=none guibg=' . s:grey236 . ' guifg=' . s:grey247 . ' gui=none'
+endif
 
 " case in switch statement
 exec 'highlight Label ctermfg=6 guifg=' . s:turquoise
@@ -175,8 +186,13 @@ exec 'highlight Statement ctermfg=5 guifg=' . s:violet . ' gui=none'
 
 " Visual selection
 exec 'highlight Visual ctermbg=0 guibg=' . s:grey0
-exec 'highlight VisualNOS ctermbg=0 ctermfg=fg cterm=none guibg=NONE' . s:grey0 . ' guifg=fg gui=none'
-exec 'highlight VisualInDiff ctermbg=0 ctermfg=251 guibg=NONE' . s:grey0 . ' guifg=' . s:white
+if g:moonlightTransparent
+  exec 'highlight VisualNOS ctermbg=0 ctermfg=fg cterm=none guibg=NONE guifg=fg gui=none'
+  exec 'highlight VisualInDiff ctermbg=0 ctermfg=251 guibg=NONE guifg=' . s:white
+else
+  exec 'highlight VisualNOS ctermbg=0 ctermfg=fg cterm=none guibg=' . s:grey0 . ' guifg=fg gui=none'
+  exec 'highlight VisualInDiff ctermbg=0 ctermfg=251 guibg=' . s:grey0 . ' guifg=' . s:white
+endif
 
 " Errors, warnings and whitespace-eol
 exec 'highlight Error ctermbg=bg ctermfg=1 guibg=bg guifg=' . s:red
@@ -215,14 +231,26 @@ if g:moonlightCursorColor
 else
     exec 'highlight Cursor ctermfg=bg ctermbg=247 guifg=bg guibg=' . s:grey247
 endif
-exec 'highlight lCursor ctermfg=bg ctermbg=247 guifg=bg guibg=NONE' . s:grey247
-exec 'highlight CursorLineNr ctermbg=234 ctermfg=4 cterm=none guibg=NONE' . s:grey234 . ' guifg=' . s:blue . ' gui=none'
-exec 'highlight CursorColumn ctermbg=234 cterm=none guibg=NONE' . s:grey234
-exec 'highlight CursorLine ctermbg=234 cterm=none guibg=NONE' . s:grey234
-exec 'highlight Folded ctermbg=234 ctermfg=14 guibg=NONE' . s:grey234 . ' guifg='. s:lime
-exec 'highlight FoldColumn ctermbg=236 ctermfg=14 guibg=NONE' . s:grey236 . ' guifg=' . s:lime
+
 exec 'highlight SignColumn ctermbg=bg ctermfg=14 guibg=NONE guifg=' . s:lime
-exec 'highlight Todo ctermbg=3 ctermfg=bg guibg=NONE' . s:yellow . ' guifg=bg'
+if g:moonlightTransparent
+  exec 'highlight lCursor ctermfg=bg ctermbg=247 guifg=bg guibg=NONE'
+  exec 'highlight CursorLineNr ctermbg=234 ctermfg=4 cterm=none guibg=NONE guifg=' . s:blue . ' gui=none'
+  exec 'highlight CursorColumn ctermbg=234 cterm=none guibg=NONE'
+  exec 'highlight CursorLine ctermbg=234 cterm=none guibg=NONE'
+  exec 'highlight Folded ctermbg=234 ctermfg=14 guibg=NONE guifg='. s:lime
+  exec 'highlight FoldColumn ctermbg=236 ctermfg=14 guibg=NONE guifg=' . s:lime
+  exec 'highlight Todo ctermbg=3 ctermfg=bg guibg=NONE guifg=bg'
+else
+  exec 'highlight lCursor ctermfg=bg ctermbg=247 guifg=bg guibg=' . s:grey247
+  exec 'highlight CursorLineNr ctermbg=234 ctermfg=4 cterm=none guibg=' . s:grey234 . ' guifg=' . s:blue . ' gui=none'
+  exec 'highlight CursorColumn ctermbg=234 cterm=none guibg=' . s:grey234
+  exec 'highlight CursorLine ctermbg=234 cterm=none guibg=' . s:grey234
+  exec 'highlight Folded ctermbg=234 ctermfg=14 guibg=' . s:grey234 . ' guifg='. s:lime
+  exec 'highlight FoldColumn ctermbg=236 ctermfg=14 guibg=' . s:grey236 . ' guifg=' . s:lime
+  exec 'highlight Todo ctermbg=3 ctermfg=bg guibg=' . s:yellow . ' guifg=bg'
+endif
+
 exec 'highlight SpecialKey ctermbg=bg ctermfg=12 guibg=bg guifg=' . s:sky
 if g:moonlightUnderlineMatchParen
     exec 'highlight MatchParen ctermbg=bg ctermfg=8 cterm=underline guibg=bg guifg=' . s:coral . ' gui=underline'
@@ -231,7 +259,13 @@ else
 endif
 exec 'highlight Ignore ctermfg=12 guifg=' . s:sky
 exec 'highlight Underlined ctermfg=10 cterm=none guifg=' . s:emerald . ' gui=none'
-exec 'highlight QuickFixLine ctermbg=237 cterm=none guibg=NONE' . s:grey237
+
+if g:moonlightTransparent
+  exec 'highlight QuickFixLine ctermbg=237 cterm=none guibg=NONE'
+else
+  exec 'highlight QuickFixLine ctermbg=237 cterm=none guibg=' . s:grey237
+endif
+
 exec 'highlight Delimiter ctermfg=251 guifg=' . s:white
 
 " Neovim only highlight groups
@@ -239,7 +273,11 @@ exec 'highlight Whitespace ctermfg=235 guifg=' . s:grey235
 exec 'highlight TermCursor ctermbg=247 ctermfg=bg cterm=none guibg=' . s:grey247 . ' guifg=bg gui=none'
 
 " Color column (after line 80)
-exec 'highlight ColorColumn ctermbg=233 guibg=NONE' . s:grey233
+if g:moonlightTransparent
+  exec 'highlight ColorColumn ctermbg=233 guibg=NONE'
+else
+  exec 'highlight ColorColumn ctermbg=233 guibg=' . s:grey233
+endif
 
 " Conceal color, as used by indentLine plugin
 exec 'highlight Conceal ctermbg=bg ctermfg=235 guibg=bg guifg=' . s:grey235

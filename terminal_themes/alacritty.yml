@@ -10,7 +10,7 @@ colors:
   # Cursor colors
   cursor:
     text:   '#181819'
-    cursor: '#9e9e9e'
+    cursor: '#8DA54E'
 
   # Selection colors
   selection:
@@ -21,18 +21,18 @@ colors:
   normal:
     black:   '#373c40'
     red:     '#D1616B'
-    green:   '#79813E'
-    yellow:  '#DDC18F'
+    green:   '#8DA54E'
+    yellow:  '#B0A280'
     blue:    '#617E9C'
     magenta: '#984673'
     cyan:    '#6CCEB8'
-    white:   '#b2b2b2'
+    white:   '#CAD4C8'
 
   # Bright colors
   bright:
     black:   '#7c8f8f'
     red:     '#C33552'
-    green:   '#8DA54E'
+    green:   '#a7c659'
     yellow:  '#E8F198'
     blue:    '#367CA8'
     magenta: '#D19FA5'

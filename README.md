@@ -176,7 +176,7 @@ the following setting will usually be required in _~/.tmux.conf_:
 set -ga terminal-overrides ',xterm-256color:Tc'
 ```
 
-Vim, as against Neovim, inside _tmux_, will also require the following setting
+Vim, inside _tmux_, will also require the following setting
 be added to _vimrc:_
 
 ```viml
@@ -224,31 +224,31 @@ for 256 colors, which usually means setting the terminal's type to
 
 The terminal should then be configured with the following _moonlight_ colors:
 
-| Type           | Category        | Value     | Color                                                       |
-| -------------- | --------------- | --------- | ----------------------------------------------------------- |
-| Background     | Background      | `#181819` | ![background](https://placehold.it/32/181819/000000?text=+) |
-| Foreground     | Foreground      | `#b2b2b2` | ![background](https://placehold.it/32/b2b2b2/000000?text=+) |
-| Bold           | Bold            | `#eeeeee` | ![background](https://placehold.it/32/eeeeee/000000?text=+) |
-| Cursor         | Cursor          | `#9e9e9e` | ![background](https://placehold.it/32/9e9e9e/000000?text=+) |
-| Cursor Text    | Cursor Text     | `#181819` | ![background](https://placehold.it/32/181819/000000?text=+) |
-| Selection      | Selection       | `#b2ceee` | ![background](https://placehold.it/32/b2ceee/000000?text=+) |
-| Selection Text | Selection Text  | `#181819` | ![background](https://placehold.it/32/181819/000000?text=+) |
-| Color 1        | Black (normal)  | `#373c40` | ![background](https://placehold.it/32/373c40/000000?text=+) |
-| Color 2        | Red (normal)    | `#D1616B` | ![background](https://placehold.it/32/D1616B/000000?text=+) |
-| Color 3        | Green (normal)  | `#79813E` | ![background](https://placehold.it/32/79813E/000000?text=+) |
-| Color 4        | Yellow (normal) | `#DDC18F` | ![background](https://placehold.it/32/DDC18F/000000?text=+) |
-| Color 5        | Blue (normal)   | `#617E9C` | ![background](https://placehold.it/32/617E9C/000000?text=+) |
-| Color 6        | Purple (normal) | `#984673` | ![background](https://placehold.it/32/984673/000000?text=+) |
-| Color 7        | Cyan (normal)   | `#6CCEB8` | ![background](https://placehold.it/32/6CCEB8/000000?text=+) |
-| Color 8        | White (normal)  | `#b2b2b2` | ![background](https://placehold.it/32/b2b2b2/000000?text=+) |
-| Color 9        | Black (bright)  | `#7c8f8f` | ![background](https://placehold.it/32/f09479/000000?text=+) |
-| Color 10       | Red (bright)    | `#C33552` | ![background](https://placehold.it/32/ff5189/000000?text=+) |
-| Color 11       | Green (bright)  | `#8DA54E` | ![background](https://placehold.it/32/36c692/000000?text=+) |
-| Color 12       | Yellow (bright) | `#E8F198` | ![background](https://placehold.it/32/bfbf97/000000?text=+) |
-| Color 13       | Blue (bright)   | `#367CA8` | ![background](https://placehold.it/32/78c2ff/000000?text=+) |
-| Color 14       | Purple (bright) | `#D19FA5` | ![background](https://placehold.it/32/ae81ff/000000?text=+) |
-| Color 15       | Cyan (bright)   | `#36c692` | ![background](https://placehold.it/32/85dc85/000000?text=+) |
-| Color 16       | White (bright)  | `#D0BCBB` | ![background](https://placehold.it/32/e2637f/000000?text=+) |
+| Type           | Category        | Value     | Color                                                              |
+| -------------- | --------------- | --------- | ------------------------------------------------------------------ |
+| Background     | Background      | `#181819` | ![background](https://via.placeholder.com/32/181819/000000?text=+) |
+| Foreground     | Foreground      | `#b2b2b2` | ![background](https://via.placeholder.com/32/b2b2b2/000000?text=+) |
+| Bold           | Bold            | `#eeeeee` | ![background](https://via.placeholder.com/32/eeeeee/000000?text=+) |
+| Cursor         | Cursor          | `#9e9e9e` | ![background](https://via.placeholder.com/32/9e9e9e/000000?text=+) |
+| Cursor Text    | Cursor Text     | `#181819` | ![background](https://via.placeholder.com/32/181819/000000?text=+) |
+| Selection      | Selection       | `#b2ceee` | ![background](https://via.placeholder.com/32/b2ceee/000000?text=+) |
+| Selection Text | Selection Text  | `#181819` | ![background](https://via.placeholder.com/32/181819/000000?text=+) |
+| Color 1        | Black (normal)  | `#373c40` | ![background](https://via.placeholder.com/32/373c40/000000?text=+) |
+| Color 2        | Red (normal)    | `#D1616B` | ![background](https://via.placeholder.com/32/D1616B/000000?text=+) |
+| Color 3        | Green (normal)  | `#79813E` | ![background](https://via.placeholder.com/32/79813E/000000?text=+) |
+| Color 4        | Yellow (normal) | `#DDC18F` | ![background](https://via.placeholder.com/32/DDC18F/000000?text=+) |
+| Color 5        | Blue (normal)   | `#617E9C` | ![background](https://via.placeholder.com/32/617E9C/000000?text=+) |
+| Color 6        | Purple (normal) | `#984673` | ![background](https://via.placeholder.com/32/984673/000000?text=+) |
+| Color 7        | Cyan (normal)   | `#6CCEB8` | ![background](https://via.placeholder.com/32/6CCEB8/000000?text=+) |
+| Color 8        | White (normal)  | `#b2b2b2` | ![background](https://via.placeholder.com/32/b2b2b2/000000?text=+) |
+| Color 9        | Black (bright)  | `#7c8f8f` | ![background](https://via.placeholder.com/32/f09479/000000?text=+) |
+| Color 10       | Red (bright)    | `#C33552` | ![background](https://via.placeholder.com/32/ff5189/000000?text=+) |
+| Color 11       | Green (bright)  | `#8DA54E` | ![background](https://via.placeholder.com/32/36c692/000000?text=+) |
+| Color 12       | Yellow (bright) | `#E8F198` | ![background](https://via.placeholder.com/32/bfbf97/000000?text=+) |
+| Color 13       | Blue (bright)   | `#367CA8` | ![background](https://via.placeholder.com/32/78c2ff/000000?text=+) |
+| Color 14       | Purple (bright) | `#D19FA5` | ![background](https://via.placeholder.com/32/ae81ff/000000?text=+) |
+| Color 15       | Cyan (bright)   | `#36c692` | ![background](https://via.placeholder.com/32/85dc85/000000?text=+) |
+| Color 16       | White (bright)  | `#D0BCBB` | ![background](https://via.placeholder.com/32/e2637f/000000?text=+) |
 
 ## License
 

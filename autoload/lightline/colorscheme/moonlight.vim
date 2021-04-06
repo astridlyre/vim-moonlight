@@ -3,13 +3,13 @@
 " URL:     github.com/astridlyre/vim-moonlight
 " License: MIT (https://opensource.org/licenses/MIT)
 
-let s:white   = ['#c6c6c6', 251]
+let s:white   = ['#b2b2b2', 251]
 let s:grey247 = ['#9e9e9e', 247]
-let s:grey236 = ['#303030', 236]
-let s:grey234 = ['#1c1c1c', 234]
-let s:blue    = ['#80a0ff', 4]
-let s:purple  = ['#ae81ff', 13]
-let s:crimson = ['#ff5189', 9]
+let s:grey236 = ['#373c40', 236]
+let s:grey234 = ['#181819', 234]
+let s:blue    = ['#617E9C', 4]
+let s:purple  = ['#984673', 13]
+let s:crimson = ['#D1616B', 9]
 
 if exists('g:lightline')
     let s:p = {
