@@ -13,15 +13,15 @@ time, primarily with regard to language and plugin theming.
 
 ### Go
 
-<img width="800" alt="go" src="https://raw.githubusercontent.com/astridlyre/vim-moonlight/main/misc/go.png">
+<img width="600" alt="go" src="https://raw.githubusercontent.com/astridlyre/vim-moonlight/main/misc/go.png">
 
 ### JavaScript
 
-<img width="800" alt="javascript" src="https://raw.githubusercontent.com/astridlyre/vim-moonlight/main/misc/javascript.png">
+<img width="600" alt="javascript" src="https://raw.githubusercontent.com/astridlyre/vim-moonlight/main/misc/javascript.png">
 
 ### Bash
 
-<img width="800" alt="bash" src="https://raw.githubusercontent.com/astridlyre/vim-moonlight/main/misc/bash.png">
+<img width="600" alt="bash" src="https://raw.githubusercontent.com/astridlyre/vim-moonlight/main/misc/bash.png">
 
 The font in use is [Iosevka](https://typeof.net/Iosevka/).
 
