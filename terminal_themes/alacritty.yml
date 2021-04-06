@@ -1,0 +1,40 @@
+draw_bold_text_with_bright_colors: true
+
+colors:
+  # Default colors
+  primary:
+    background:        '#181819'
+    foreground:        '#b2b2b2'
+    bright_foreground: '#eeeeee'
+
+  # Cursor colors
+  cursor:
+    text:   '#181819'
+    cursor: '#9e9e9e'
+
+  # Selection colors
+  selection:
+    text:       '#181819'
+    background: '#8DA54E'
+
+  # Normal colors
+  normal:
+    black:   '#373c40'
+    red:     '#D1616B'
+    green:   '#79813E'
+    yellow:  '#DDC18F'
+    blue:    '#617E9C'
+    magenta: '#984673'
+    cyan:    '#6CCEB8'
+    white:   '#b2b2b2'
+
+  # Bright colors
+  bright:
+    black:   '#7c8f8f'
+    red:     '#C33552'
+    green:   '#8DA54E'
+    yellow:  '#E8F198'
+    blue:    '#367CA8'
+    magenta: '#D19FA5'
+    cyan:    '#36c692'
+    white:   '#D0BCBB'
