@@ -7,7 +7,7 @@ time, primarily with regard to language and plugin theming.
 
 ## Color Palette
 
-![palette]()
+![palette](https://raw.githubusercontent.com/astridlyre/vim-moonlight/main/misc/moonlight-palette.png)
 
 ## Screenshots
 
