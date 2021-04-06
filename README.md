@@ -190,9 +190,6 @@ A collection of _moonlight_-flavoured terminal themes are provided for those usi
 _moonlight_ with `termguicolors` (`cterm` users should refer to the next section
 and not use these terminal themes):
 
-- _iTerm2_ users on macOS can import [this](terminal_themes/moonlight.itermcolors)
-  color scheme.
-
 - _Gnome Terminal_ users can run
   [this](terminal_themes/gnome-terminal-moonlight.sh) script to create a _Moonlight_
   profile. Before executing the script, please install the `dconf-cli` command
