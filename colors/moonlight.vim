@@ -294,7 +294,7 @@ exec 'highlight moonlightYellow ctermfg=3 guifg=' . s:yellow
 exec 'highlight moonlightOrange ctermfg=7 guifg=' . s:orange
 exec 'highlight moonlightCoral ctermfg=8 guifg=' . s:coral
 exec 'highlight moonlightLime ctermfg=14 guifg=' . s:lime
-exec 'highlight moonlightFilename ctermfg=' . s:black . 'guifg=' . s:black . ' ctermbg=10 guibg=' . s:lime
+exec 'highlight moonlightFilename ctermfg=0 guifg=' . s:black . ' ctermbg=10 guibg=' . s:lime
 exec 'highlight moonlightGreen ctermfg=2 guifg=' . s:green
 exec 'highlight moonlightEmerald ctermfg=10 guifg=' . s:emerald
 exec 'highlight moonlightBlue ctermfg=4 guifg=' . s:blue
