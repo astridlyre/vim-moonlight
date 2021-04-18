@@ -282,9 +282,6 @@ endif
 exec 'highlight Conceal ctermbg=bg ctermfg=235 guibg=bg guifg=' . s:grey235
 
 " Custom moonlight highlight groups
-exec 'highlight moonlightStatusGreen ctermfg=232 ctermbg=14 cterm=none guibg=' . s:lime . ' guifg=' . s:black . ' gui=none'
-exec 'highlight moonlightStatusPurple ctermfg=232 ctermbg=13 cterm=none guibg=' . s:purple . ' guifg=' . s:black . ' gui=none'
-exec 'highlight moonlightStatusGrey ctermfg=232 ctermbg=247 cterm=none guibg=' . s:grey247 . ' guifg=' . s:black . ' gui=none'
 exec 'highlight moonlightReset ctermfg=fg guifg=fg'
 exec 'highlight moonlightWhite ctermfg=251 guifg=' . s:white
 exec 'highlight moonlightGrey0 ctermfg=0 guifg=' . s:grey0
