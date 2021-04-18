@@ -142,8 +142,8 @@ exec 'highlight Exception ctermfg=9 guifg=' . s:crimson
 exec 'highlight PreProc ctermfg=15 guifg=' . s:cranberry
 
 " Status, split and tab lines
-exec 'highlight StatusLine ctermbg=236  ctermfg=251 cterm=none guibg=' . s:grey236 . ' guifg=' . s:white . ' gui=none'
-exec 'highlight StatusLineNC ctermbg=236 ctermfg=247 cterm=none guibg=' . s:grey236 . ' guifg=' . s:grey247 . ' gui=none'
+exec 'highlight StatusLine ctermbg=232  ctermfg=251 cterm=none guibg=' . s:black . ' guifg=' . s:white . ' gui=none'
+exec 'highlight StatusLineNC ctermbg=232 ctermfg=247 cterm=none guibg=' . s:black . ' guifg=' . s:grey247 . ' gui=none'
 if g:moonlightTransparent
   exec 'highlight VertSplit ctermbg=236 ctermfg=236 cterm=none guibg=NONE guifg=' . s:grey236 . ' gui=none'
   exec 'highlight Tabline ctermbg=236 ctermfg=247 cterm=none guibg=NONE guifg=' . s:grey247 . ' gui=none'
@@ -282,6 +282,9 @@ endif
 exec 'highlight Conceal ctermbg=bg ctermfg=235 guibg=bg guifg=' . s:grey235
 
 " Custom moonlight highlight groups
+exec 'highlight moonlightStatusGreen ctermfg=14 ctermbg=232 cterm=none guifg=' . s:lime . ' guibg=' . s:black . ' gui=none'
+exec 'highlight moonlightStatusPurple ctermfg=13 ctermbg=232 cterm=none guifg=' . s:purple . ' guibg=' . s:black . ' gui=none'
+exec 'highlight moonlightStatusGrey ctermfg=247 ctermbg=232 cterm=none guifg=' . s:grey247 . ' guibg=' . s:black . ' gui=none'
 exec 'highlight moonlightReset ctermfg=fg guifg=fg'
 exec 'highlight moonlightWhite ctermfg=251 guifg=' . s:white
 exec 'highlight moonlightGrey0 ctermfg=0 guifg=' . s:grey0
@@ -293,7 +296,6 @@ exec 'highlight moonlightYellow ctermfg=3 guifg=' . s:yellow
 exec 'highlight moonlightOrange ctermfg=7 guifg=' . s:orange
 exec 'highlight moonlightCoral ctermfg=8 guifg=' . s:coral
 exec 'highlight moonlightLime ctermfg=14 guifg=' . s:lime
-exec 'highlight moonlightFilename ctermfg=0 guifg=' . s:black . ' ctermbg=10 guibg=' . s:lime
 exec 'highlight moonlightGreen ctermfg=2 guifg=' . s:green
 exec 'highlight moonlightEmerald ctermfg=10 guifg=' . s:emerald
 exec 'highlight moonlightBlue ctermfg=4 guifg=' . s:blue
