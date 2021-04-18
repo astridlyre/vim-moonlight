@@ -142,9 +142,9 @@ exec 'highlight Exception ctermfg=9 guifg=' . s:crimson
 exec 'highlight PreProc ctermfg=15 guifg=' . s:cranberry
 
 " Status, split and tab lines
+exec 'highlight StatusLine ctermbg=236  ctermfg=251 cterm=none guibg=' . s:grey236 . ' guifg=' . s:white . ' gui=none'
+exec 'highlight StatusLineNC ctermbg=236 ctermfg=247 cterm=none guibg=' . s:grey236 . ' guifg=' . s:grey247 . ' gui=none'
 if g:moonlightTransparent
-  exec 'highlight StatusLine ctermbg=236  ctermfg=251 cterm=none guibg=NONE guifg=' . s:white . ' gui=none'
-  exec 'highlight StatusLineNC ctermbg=236 ctermfg=247 cterm=none guibg=NONE guifg=' . s:grey247 . ' gui=none'
   exec 'highlight VertSplit ctermbg=236 ctermfg=236 cterm=none guibg=NONE guifg=' . s:grey236 . ' gui=none'
   exec 'highlight Tabline ctermbg=236 ctermfg=247 cterm=none guibg=NONE guifg=' . s:grey247 . ' gui=none'
   exec 'highlight TablineSel ctermbg=236 ctermfg=4 cterm=none guibg=NONE guifg=' . s:blue . ' gui=none'
@@ -152,8 +152,6 @@ if g:moonlightTransparent
   exec 'highlight StatusLineTerm ctermbg=236 ctermfg=251 cterm=none guibg=NONE guifg=' . s:white . ' gui=none'
   exec 'highlight StatusLineTermNC ctermbg=236 ctermfg=247 cterm=none guibg=NONE guifg=' . s:grey247 . ' gui=none'
 else
-  exec 'highlight StatusLine ctermbg=236  ctermfg=251 cterm=none guibg=' . s:grey236 . ' guifg=' . s:white . ' gui=none'
-  exec 'highlight StatusLineNC ctermbg=236 ctermfg=247 cterm=none guibg=' . s:grey236 . ' guifg=' . s:grey247 . ' gui=none'
   exec 'highlight VertSplit ctermbg=236 ctermfg=236 cterm=none guibg=' . s:grey236 . ' guifg=' . s:grey236 . ' gui=none'
   exec 'highlight Tabline ctermbg=236 ctermfg=247 cterm=none guibg=' . s:grey236 . ' guifg=' . s:grey247 . ' gui=none'
   exec 'highlight TablineSel ctermbg=236 ctermfg=4 cterm=none guibg=' . s:grey236 . ' guifg=' . s:blue . ' gui=none'
@@ -223,6 +221,7 @@ else
 endif
 
 " Misc
+exec 'highlight EndOfBuffer ctermfg=1 guifg=' . s:purple . ' gui=none'
 exec 'highlight Question ctermfg=14 guifg=' . s:lime . ' gui=none'
 exec 'highlight MoreMsg ctermfg=1 guifg=' . s:red . ' gui=none'
 exec 'highlight LineNr ctermbg=bg ctermfg=241 guibg=NONE guifg=' . s:grey241
