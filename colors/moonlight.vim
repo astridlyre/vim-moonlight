@@ -221,7 +221,7 @@ else
 endif
 
 " Misc
-exec 'highlight EndOfBuffer ctermfg=1 guifg=' . s:purple . ' gui=none'
+exec 'highlight EndOfBuffer ctermfg=1 guifg=' . s:grey0 . ' gui=none'
 exec 'highlight Question ctermfg=14 guifg=' . s:lime . ' gui=none'
 exec 'highlight MoreMsg ctermfg=1 guifg=' . s:red . ' gui=none'
 exec 'highlight LineNr ctermbg=bg ctermfg=241 guibg=NONE guifg=' . s:grey241
