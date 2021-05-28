@@ -352,44 +352,9 @@ highlight! link csPrecondit moonlightViolet
 highlight! link csStorage moonlightViolet
 highlight! link csXmlTag moonlightBlue
 
-" Clojure
-highlight! link clojureDefine moonlightViolet
-highlight! link clojureKeyword moonlightPurple
-highlight! link clojureMacro moonlightOrange
-highlight! link clojureParen moonlightBlue
-highlight! link clojureSpecial moonlightSky
-
-" CoffeeScript
-highlight! link coffeeConstant moonlightEmerald
-highlight! link coffeeGlobal moonlightTurquoise
-highlight! link coffeeKeyword moonlightOrange
-highlight! link coffeeObjAssign moonlightSky
-highlight! link coffeeSpecialIdent moonlightLime
-highlight! link coffeeSpecialVar moonlightBlue
-highlight! link coffeeStatement moonlightCoral
-
-" Crystal
-highlight! link crystalAccess moonlightYellow
-highlight! link crystalAttribute moonlightSky
-highlight! link crystalBlockParameter moonlightGreen
-highlight! link crystalClass moonlightOrange
-highlight! link crystalDefine moonlightViolet
-highlight! link crystalExceptional moonlightCoral
-highlight! link crystalInstanceVariable moonlightLime
-highlight! link crystalModule moonlightBlue
-highlight! link crystalPseudoVariable moonlightGreen
-highlight! link crystalSharpBang moonlightGrey247
-highlight! link crystalStringDelimiter moonlightWheat
-
 " CSS/SCSS
 highlight! link cssIdentifier moonlightYellow
 highlight! link scssSelectorName moonlightBlue
-
-" Dart
-highlight! link dartMetadata moonlightLime
-highlight! link dartStorageClass moonlightViolet
-highlight! link dartTypedef moonlightViolet
-highlight! link dartUserType moonlightBlue
 
 " Elixir
 highlight! link eelixirDelimiter moonlightCrimson
@@ -588,13 +553,6 @@ highlight! link rustStructure moonlightViolet
 highlight! link rustTrait moonlightEmerald
 highlight! link rustType moonlightEmerald
 
-" Scala, note link highlighting does not work (I don't know why)
-exec 'highlight scalaCapitalWord ctermfg=4 guifg=' . s:blue
-exec 'highlight scalaCommentCodeBlock ctermfg=247 guifg=' . s:grey247
-exec 'highlight scalaInstanceDeclaration ctermfg=6 guifg=' . s:turquoise
-exec 'highlight scalaKeywordModifier ctermfg=14 guifg=' . s:lime
-exec 'highlight scalaSpecial ctermfg=9 guifg=' . s:crimson
-
 " Shell scripts
 highlight! link shAlias moonlightTurquoise
 highlight! link shCommandSub moonlightReset
@@ -691,50 +649,6 @@ highlight! link TagbarVisibilityProtected moonlightLime
 highlight! link TagbarVisibilityPrivate moonlightLime
 highlight! link TagbarKind moonlightEmerald
 
-" NERDTree plugin
-highlight! link NERDTreeClosable moonlightGreen
-highlight! link NERDTreeCWD moonlightPurple
-highlight! link NERDTreeDir moonlightSky
-highlight! link NERDTreeDirSlash moonlightCranberry
-highlight! link NERDTreeExecFile moonlightWheat
-highlight! link NERDTreeFile moonlightWhite
-highlight! link NERDTreeHelp moonlightGrey247
-highlight! link NERDTreeLinkDir moonlightBlue
-highlight! link NERDTreeLinkFile moonlightBlue
-highlight! link NERDTreeLinkTarget moonlightTurquoise
-highlight! link NERDTreeOpenable moonlightGreen
-highlight! link NERDTreePart moonlightGrey0
-highlight! link NERDTreePartFile moonlightGrey0
-highlight! link NERDTreeUp moonlightBlue
-
-" NERDTree Git plugin
-highlight! link NERDTreeGitStatusDirDirty moonlightWheat
-highlight! link NERDTreeGitStatusModified moonlightCrimson
-highlight! link NERDTreeGitStatusRenamed moonlightSky
-highlight! link NERDTreeGitStatusStaged moonlightSky
-highlight! link NERDTreeGitStatusUntracked moonlightRed
-
-" vimfiler plugin
-highlight! link vimfilerClosedFile moonlightBlue
-highlight! link vimfilerMarkedFile moonlightOrange
-highlight! link vimfilerNonMark moonlightGreen
-highlight! link vimfilerNormalFile moonlightWhite
-highlight! link vimfilerOpenedFile moonlightBlue
-highlight! link vimfilerROFile moonlightGrey246
-
-" fern.vim plugin
-highlight! link FernBranchSymbol moonlightGreen
-highlight! link FernBranchText moonlightBlue
-highlight! link FernMarkedLine moonlightCoral
-highlight! link FernMarkedText moonlightCoral
-highlight! link FernRootSymbol moonlightPurple
-highlight! link FernRootText moonlightPurple
-
-" fern-git-status.vim plugin
-highlight! link FernGitStatusBracket moonlightGrey246
-highlight! link FernGitStatusIndex moonlightEmerald
-highlight! link FernGitStatusWorktree moonlightCrimson
-
 " Misc stylings
 highlight! link bufExplorerHelp moonlightGrey247
 highlight! link bufExplorerSortBy moonlightGrey247
@@ -782,23 +696,6 @@ highlight! link NeomakeWarningSign moonlightYellowAlert
 highlight! link NeomakeInfoSign moonlightSkyAlert
 highlight! link NeomakeMessageSign moonlightWhiteAlert
 
-" ALE plugin
-if g:moonlightUndercurls
-     exec 'highlight ALEError ctermbg=bg guibg=bg gui=undercurl guisp=' . s:red
-     exec 'highlight ALEWarning ctermbg=bg guibg=bg gui=undercurl guisp=' . s:yellow
-     exec 'highlight ALEInfo ctermbg=bg guibg=bg gui=undercurl guisp=' . s:sky
-else
-    exec 'highlight ALEError ctermbg=bg guibg=bg'
-    exec 'highlight ALEWarning ctermbg=bg guibg=bg'
-    exec 'highlight ALEInfo ctermbg=bg guibg=bg'
-endif
-highlight! link ALEVirtualTextError moonlightGrey241
-highlight! link ALEErrorSign moonlightRedAlert
-highlight! link ALEVirtualTextWarning moonlightGrey241
-highlight! link ALEWarningSign moonlightYellowAlert
-highlight! link ALEVirtualTextInfo moonlightGrey241
-highlight! link ALEInfoSign moonlightSkyAlert
-
 " Neovim LSP diagnostics
 if g:moonlightUndercurls
      exec 'highlight LspDiagnosticsUnderlineError ctermbg=bg guibg=bg gui=undercurl guisp=' . s:red
@@ -829,11 +726,6 @@ highlight! link GitGutterAdd moonlightEmeraldAlert
 highlight! link GitGutterChange moonlightPurpleAlert
 highlight! link GitGutterChangeDelete moonlightCoralAlert
 highlight! link GitGutterDelete moonlightRedAlert
-
-" Signify plugin
-highlight! link SignifySignAdd moonlightEmeraldAlert
-highlight! link SignifySignChange moonlightPurpleAlert
-highlight! link SignifySignDelete moonlightRedAlert
 
 " FZF plugin
 exec 'highlight fzf1 ctermfg=9 ctermbg=236 guifg=' . s:crimson . ' guibg=' . s:grey236
