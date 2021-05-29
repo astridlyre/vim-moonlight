@@ -103,9 +103,9 @@ exec 'highlight ModeMsg ctermfg=247 guifg=' . s:grey247 . ' gui=none'
 
 " Comments
 if g:moonlightItalics
-    exec 'highlight Comment ctermfg=246 guifg=' . s:grey246 . ' gui=italic'
+    exec 'highlight Comment ctermfg=246 guifg=' . s:grey241 . ' gui=italic'
 else
-    exec 'highlight Comment ctermfg=246 guifg=' . s:grey246
+    exec 'highlight Comment ctermfg=246 guifg=' . s:grey241
 endif
 
 " Functions
@@ -127,7 +127,7 @@ exec 'highlight Title ctermfg=7 guifg=' . s:orange . ' gui=bold'
 exec 'highlight StorageClass ctermfg=8 guifg=' . s:coral
 
 " void, intptr_t
-exec 'highlight Type ctermfg=10 guifg=' . s:emerald . ' gui=none'
+exec 'highlight Type ctermfg=10 guifg=' . s:lime . ' gui=none'
 
 " Numbers
 exec 'highlight Constant ctermfg=13 guifg=' . s:purple
@@ -174,7 +174,7 @@ exec 'highlight Repeat ctermfg=5 guifg=' . s:violet
 
 " Search
 exec 'highlight Search ctermbg=bg ctermfg=8 cterm=reverse guibg=bg guifg=' . s:coral . ' gui=reverse'
-exec 'highlight IncSearch ctermbg=bg ctermfg=3 guibg=bg guifg=' . s:yellow
+exec 'highlight IncSearch ctermbg=bg ctermfg=3 guibg=bg guifg=' . s:green
 
 " '\n' sequences
 exec 'highlight Special ctermfg=15 guifg=' . s:cranberry
@@ -193,8 +193,8 @@ else
 endif
 
 " Errors, warnings and whitespace-eol
-exec 'highlight Error ctermbg=bg ctermfg=1 guibg=bg guifg=' . s:red
-exec 'highlight ErrorMsg ctermbg=bg ctermfg=1 guibg=bg guifg=' . s:red
+exec 'highlight Error ctermbg=bg ctermfg=1 guibg=bg guifg=' . s:crimson
+exec 'highlight ErrorMsg ctermbg=bg ctermfg=1 guibg=bg guifg=' . s:crimson
 exec 'highlight WarningMsg ctermbg=bg ctermfg=7 guibg=bg guifg=' . s:orange
 
 " struct, union, enum, typedef
@@ -202,10 +202,10 @@ exec 'highlight Structure ctermfg=4 guifg=' . s:blue
 
 " Auto-text-completion menu
 exec 'highlight Pmenu ctermbg=235 ctermfg=fg guibg=' . s:grey235 . ' guifg=fg'
-exec 'highlight PmenuSel ctermbg=2 ctermfg=236 guibg=' . s:green . ' guifg=' . s:grey236
-exec 'highlight PmenuSbar ctermbg=235 guibg=' . s:grey235
-exec 'highlight PmenuThumb ctermbg=244 guibg=' . s:grey244
-exec 'highlight WildMenu ctermbg=2 ctermfg=236 guibg=' . s:green . ' guifg=' . s:grey236
+exec 'highlight PmenuSel ctermbg=2 ctermfg=236 guibg=' . s:lime . ' guifg=' . s:grey234
+exec 'highlight PmenuSbar ctermbg=235 guibg=' . s:grey236
+exec 'highlight PmenuThumb ctermbg=244 guibg=' . s:grey241
+exec 'highlight WildMenu ctermbg=2 ctermfg=236 guibg=' . s:lime . ' guifg=' . s:grey234
 
 " Spelling errors
 if g:moonlightUndercurls
@@ -224,7 +224,7 @@ endif
 exec 'highlight EndOfBuffer ctermfg=1 guifg=' . s:grey0 . ' gui=none'
 exec 'highlight Question ctermfg=14 guifg=' . s:lime . ' gui=none'
 exec 'highlight MoreMsg ctermfg=1 guifg=' . s:red . ' gui=none'
-exec 'highlight LineNr ctermbg=bg ctermfg=241 guibg=NONE guifg=' . s:grey241
+exec 'highlight LineNr ctermbg=bg ctermfg=241 guibg=none guifg=' . s:grey241
 if g:moonlightCursorColor
     exec 'highlight Cursor ctermfg=bg ctermbg=4 guifg=bg guibg=' . s:blue
 else
@@ -234,7 +234,7 @@ endif
 exec 'highlight SignColumn ctermbg=bg ctermfg=14 guibg=NONE guifg=' . s:lime
 if g:moonlightTransparent
   exec 'highlight lCursor ctermfg=bg ctermbg=247 guifg=bg guibg=NONE'
-  exec 'highlight CursorLineNr ctermbg=234 ctermfg=4 cterm=none guibg=NONE guifg=' . s:blue . ' gui=none'
+  exec 'highlight CursorLineNr ctermbg=234 ctermfg=4 cterm=none guibg=NONE guifg=' . s:lime . ' gui=none'
   exec 'highlight CursorColumn ctermbg=234 cterm=none guibg=NONE'
   exec 'highlight CursorLine ctermbg=234 cterm=none guibg=NONE'
   exec 'highlight Folded ctermbg=234 ctermfg=14 guibg=NONE guifg='. s:lime
@@ -250,7 +250,7 @@ else
   exec 'highlight Todo ctermbg=3 ctermfg=bg guibg=' . s:yellow . ' guifg=bg'
 endif
 
-exec 'highlight SpecialKey ctermbg=bg ctermfg=12 guibg=bg guifg=' . s:sky
+exec 'highlight SpecialKey ctermbg=bg ctermfg=12 guibg=bg guifg=' . s:blue
 if g:moonlightUnderlineMatchParen
     exec 'highlight MatchParen ctermbg=bg ctermfg=8 cterm=underline guibg=bg guifg=' . s:coral . ' gui=underline'
 else
@@ -315,19 +315,19 @@ exec 'highlight moonlightRedAlert ctermbg=bg ctermfg=1 guibg=bg guifg=' . s:red
 highlight! link TSAnnotation moonlightViolet
 highlight! link TSAttribute moonlightSky
 highlight! link TSConstant moonlightPurple
-highlight! link TSConstBuiltin moonlightGreen
+highlight! link TSConstBuiltin moonlightRed
 highlight! link TSConstMacro moonlightViolet
-highlight! link TSConstructor moonlightEmerald
-highlight! link TSError moonlightRed
-highlight! link TSFuncBuiltin moonlightSky
+highlight! link TSConstructor moonlightGreen
+highlight! link TSError moonlightCrimson
+highlight! link TSFuncBuiltin moonlightBlue
 highlight! link TSFuncMacro moonlightSky
 highlight! link TSInclude moonlightCranberry
 highlight! link TSKeywordOperator moonlightViolet
-highlight! link TSNamespace moonlightBlue
-highlight! link TSParameter moonlightWhite
+highlight! link TSNamespace moonlightSky
+highlight! link TSParameter moonlightWheat
 highlight! link TSPunctSpecial moonlightCranberry
 highlight! link TSTag moonlightBlue
-highlight! link TSTagDelimiter moonlightLime
+highlight! link TSTagDelimiter moonlightTurquoise
 highlight! link TSVariableBuiltin moonlightLime
 
 " C/C++
@@ -343,7 +343,7 @@ highlight! link cppModifier moonlightViolet
 highlight! link cppOperator moonlightGreen
 highlight! link cppStatement moonlightTurquoise
 highlight! link cppSTLconstant moonlightBlue
-highlight! link cppSTLnamespace moonlightBlue
+highlight! link cppSTLnamespace moonlightSky
 highlight! link cppStructure moonlightViolet
 
 " C#
@@ -559,7 +559,7 @@ highlight! link shCommandSub moonlightReset
 highlight! link shLoop moonlightViolet
 highlight! link shSetList moonlightTurquoise
 highlight! link shShellVariables moonlightLime
-highlight! link shStatement moonlightReset
+highlight! link shStatement moonlightCrimson
 highlight! link shVariable moonlightTurquoise
 
 " TypeScript (leafgarland/typescript-vim)
@@ -606,12 +606,12 @@ highlight! link typescriptXHRMethod moonlightSky
 
 " Vimscript
 highlight! link vimBracket moonlightSky
-highlight! link vimCommand moonlightOrange
+highlight! link vimCommand moonlightCoral
 highlight! link vimCommentTitle moonlightViolet
 highlight! link vimEnvvar moonlightCrimson
-highlight! link vimFuncName moonlightSky
+highlight! link vimFuncName moonlightBlue
 highlight! link vimFuncSID moonlightSky
-highlight! link vimFunction moonlightSky
+highlight! link vimFunction moonlightBlue
 highlight! link vimNotation moonlightSky
 highlight! link vimOption moonlightEmerald
 highlight! link vimParenSep moonlightWhite
@@ -698,26 +698,26 @@ highlight! link NeomakeMessageSign moonlightWhiteAlert
 
 " Neovim LSP diagnostics
 if g:moonlightUndercurls
-     exec 'highlight LspDiagnosticsUnderlineError ctermbg=bg guibg=bg gui=undercurl guisp=' . s:red
-     exec 'highlight LspDiagnosticsUnderlineWarning ctermbg=bg guibg=bg gui=undercurl guisp=' . s:yellow
+     exec 'highlight LspDiagnosticsUnderlineError ctermbg=bg guibg=bg gui=undercurl guisp=' . s:crimson
+     exec 'highlight LspDiagnosticsUnderlineWarning ctermbg=bg guibg=bg gui=undercurl guisp=' . s:orange
      exec 'highlight LspDiagnosticsUnderlineInformation ctermbg=bg guibg=bg gui=undercurl guisp=' . s:sky
      exec 'highlight LspDiagnosticsUnderlineHint ctermbg=bg guibg=bg gui=undercurl guisp=' . s:white
 else
-    exec 'highlight LspDiagnosticsUnderlineError ctermbg=bg guibg=bg gui=underline guisp=' . s:red
-    exec 'highlight LspDiagnosticsUnderlineWarning ctermbg=bg guibg=bg gui=underline guisp=' . s:blue
-    exec 'highlight LspDiagnosticsUnderlineInformation ctermbg=bg guibg=bg gui=underline guisp=' . s:yellow
-    exec 'highlight LspDiagnosticsUnderlineHint ctermbg=bg guibg=bg gui=underline guisp=' . s:sky
+    exec 'highlight LspDiagnosticsUnderlineError ctermbg=bg guibg=bg gui=underline guisp=' . s:crimson
+    exec 'highlight LspDiagnosticsUnderlineWarning ctermbg=bg guibg=bg gui=underline guisp=' . s:orange
+    exec 'highlight LspDiagnosticsUnderlineInformation ctermbg=bg guibg=bg gui=underline guisp=' . s:sky
+    exec 'highlight LspDiagnosticsUnderlineHint ctermbg=bg guibg=bg gui=underline guisp=' . s:white
 endif
-highlight! link LspDiagnosticsVirtualTextError moonlightGrey241
+highlight! link LspDiagnosticsVirtualTextError moonlightGrey237
 highlight! link LspDiagnosticsSignError moonlightRedAlert
-highlight! link LspDiagnosticsFloatingError moonlightRed
-highlight! link LspDiagnosticsVirtualTextWarning moonlightGrey241
+highlight! link LspDiagnosticsFloatingError moonlightCrimson
+highlight! link LspDiagnosticsVirtualTextWarning moonlightGrey237
 highlight! link LspDiagnosticsSignWarning moonlightYellowAlert
 highlight! link LspDiagnosticsFloatingWarning moonlightYellow
-highlight! link LspDiagnosticsVirtualTextInformation moonlightGrey241
+highlight! link LspDiagnosticsVirtualTextInformation moonlightGrey237
 highlight! link LspDiagnosticsSignInformation moonlightSkyAlert
 highlight! link LspDiagnosticsFloatingInformation moonlightSky
-highlight! link LspDiagnosticsVirtualTextHint moonlightGrey241
+highlight! link LspDiagnosticsVirtualTextHint moonlightGrey237
 highlight! link LspDiagnosticsSignHint moonlightWhiteAlert
 highlight! link LspDiagnosticsFloatingHint moonlightWhite
 
@@ -729,11 +729,11 @@ highlight! link GitGutterDelete moonlightRedAlert
 
 " FZF plugin
 exec 'highlight fzf1 ctermfg=9 ctermbg=236 guifg=' . s:crimson . ' guibg=' . s:grey236
-exec 'highlight fzf2 ctermfg=111 ctermbg=236 guifg=' . s:blue . ' guibg=' . s:grey236
+exec 'highlight fzf2 ctermfg=111 ctermbg=236 guifg=' . s:sky . ' guibg=' . s:grey236
 exec 'highlight fzf3 ctermfg=10 ctermbg=236 guifg=' . s:emerald . ' guibg=' . s:grey236
 exec 'highlight fzfNormal ctermfg=249 guifg=' . s:grey249
 exec 'highlight fzfFgPlus ctermfg=253 guifg=' . s:grey253
-exec 'highlight fzfBorder ctermfg=236 guifg=' . s:grey236
+exec 'highlight fzfBorder ctermfg=236 guifg=' . s:grey235
 let g:fzf_colors = {
   \  'fg':      ['fg', 'fzfNormal'],
   \  'bg':      ['bg', 'Normal'],
